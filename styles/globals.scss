@@ -1,0 +1,27 @@
+$baseFontSize: 16;
+@import 'typebase';
+
+html {
+  font-family: 'PT Sans', sans-serif;
+}
+
+@media screen and (min-width: 50em) {
+  html {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  html {
+    font-size: 16 / $baseFontSize * 1.5em;
+  }
+}
+
+article,
+div,
+header,
+footer,
+main,
+section {
+  box-sizing: border-box;
+}
