@@ -21,7 +21,9 @@ export default function Home() {
         <h6>About Me</h6>
         <hr />
         <article>
-          <Logo />
+          <h1>
+            <Logo />
+          </h1>
           <h1>Mauro Colella</h1>
           <h2>About Me</h2>
           <p>Hi, my name is Mauro Colella. I am a senior software developer with over twenty years of activity in the IT industry. I develop tailored solutions for great companies that offer great services and products.</p>

@@ -1,12 +1,5 @@
 export const Logo: React.FC<{ styles?: Record<string, any>}> = ({ styles }) => (
   <svg className={styles?.logo} viewBox="0 0 159 23">
-    <defs>
-      <filter id="halo-filter" x="-50%" y="-50%" width="200%" height="200%">
-        <feOffset result="offOut" in="SourceGraphic" dx="0.1" dy="0.1" />
-        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="0.4" />
-        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-      </filter>
-    </defs>
     <g transform="matrix(2.66667,0,0,2.66667,-1103.29,-924.552)">
       <g>
         <path className={styles?.logo__path} d="M420.333,346.719L420.333,355.143L419.073,355.143L418.401,355.143L418.401,348.279C418.401,348.231 418.383,348.193 418.347,348.165C418.311,348.137 418.269,348.123 418.221,348.123C418.133,348.123 418.077,348.167 418.053,348.255L416.145,355.143L416.061,355.143L414.153,348.255C414.129,348.167 414.073,348.123 413.985,348.123C413.937,348.123 413.895,348.141 413.859,348.177C413.823,348.213 413.805,348.255 413.805,348.303L413.805,355.143L413.733,355.143L413.733,346.719L415.725,346.719L417.069,351.531L418.401,346.719L420.333,346.719Z" />
