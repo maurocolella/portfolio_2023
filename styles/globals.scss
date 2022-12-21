@@ -1,21 +1,12 @@
 $baseFontSize: 16;
+@import 'fluid-type';
 @import 'typebase';
 
 html {
   font-family: 'PT Sans', sans-serif;
+  @include fluid-type(font-size, 800px, 1200px, 16px, 22px);
 }
 
-@media screen and (min-width: 50em) {
-  html {
-    font-size: 2vw;
-  }
-}
-
-@media screen and (min-width: 75em) {
-  html {
-    font-size: 16 / $baseFontSize * 1.5em;
-  }
-}
 
 article,
 div,
