@@ -33,7 +33,7 @@ export default function Home() {
           <p>I am European, I trained in Switzerland, and I reside in Asia.</p>
           <p>When I am not in front of the computer, my interests range from being a dad to learning about art, design, motion graphics, architecture and much more.</p>
           <p>For me, command of information technology is a means to empower people to share and access information. It is first and foremost a means to enable and facilitate intercommunication.</p>
-          <p>I&lsquo;d like to welcome  you to my abode. I hope you enjoy your visit, and I am looking forward to developing for you a platform that enables you to truly achieve and exceed every one of your professional targets and ambitions.</p>
+          <p>I&lsquo;d like to welcome you to my website. I hope you enjoy your visit, and I am looking forward to developing for you a platform that enables you to truly achieve and exceed every one of your professional targets and ambitions.</p>
           <p>It sounds simple but this is what I do.</p>
           <p>I make it simple. For you.</p>
         </article>
