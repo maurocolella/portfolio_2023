@@ -4,7 +4,7 @@ $baseFontSize: 16;
 
 html {
   @include fluid-type(font-size, 800px, 1200px, 18px, 22px);
-  color: #333;
+  color: #111;
 }
 
 article,
