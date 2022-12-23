@@ -1,6 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
+import { PT_Sans } from '@next/font/google'
 import styles from '../../styles/Layout.module.scss'
+
+const ptSans = PT_Sans({ subsets: ['latin'], weight: ['400', '700'] })
 
 export const DefaultLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
@@ -11,6 +14,11 @@ export const DefaultLayout: React.FC<React.PropsWithChildren> = ({ children }) =
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <style jsx global>{`
+        html {
+          font-family: ${ptSans.style.fontFamily}, sans-serif;
+        }
+      `}</style>
       <header></header>
       <main className={styles.main}>
         {children}
