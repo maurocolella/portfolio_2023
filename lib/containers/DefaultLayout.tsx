@@ -9,13 +9,6 @@ export const DefaultLayout: React.FC<React.PropsWithChildren> = ({ children }) =
     <html lang="en" className={ptSans.className}>
       <body className={styles.body}>
         <header className={styles.header}>
-          <div style={{
-            borderLeft: '1px solid #ddd',
-            position: 'absolute',
-            right: 0,
-            height: '100%',
-            width: '38.2%',
-          }}></div>
           <nav className={styles.nav}></nav>
         </header>
         <main className={styles.main}>
