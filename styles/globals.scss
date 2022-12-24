@@ -1,11 +1,11 @@
 $baseFontSize: 16;
-@import 'fluid-type';
+@import 'normalize.css/normalize';
 @import 'typebase';
+@import 'fluid-type';
 
 html {
   @include fluid-type(font-size, 800px, 1200px, 16px, 22px);
 }
-
 
 article,
 div,
