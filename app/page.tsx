@@ -1,8 +1,9 @@
+import { LoadablePage } from '@/components/LoadablePage'
 import { Logo } from '../lib/components/Logo'
 
 export default function Home() {
-  return (
-    <>
+  return <LoadablePage rawContent={`
+    <div>
       <h1>About Me</h1>
       <h2>About Me</h2>
       <h3>About Me</h3>
@@ -27,6 +28,6 @@ export default function Home() {
         <p>It sounds simple but this is what I do.</p>
         <p>I make it simple. For you.</p>
       </article>
-    </>
-  )
+    </div>
+  `} />
 }
