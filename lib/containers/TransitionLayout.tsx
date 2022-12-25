@@ -9,7 +9,7 @@ export const TransitionLayout: React.FC<React.PropsWithChildren> = ({ children }
     <motion.header
       initial={{ left: '-100vw' }}
       animate={{ left: 0 }}
-      transition={{ ease: 'linear' }}
+      transition={{ ease: 'linear', delay: 0.5 }}
       className={styles.header}
     >
       <nav className={styles.nav}></nav>
@@ -20,13 +20,13 @@ export const TransitionLayout: React.FC<React.PropsWithChildren> = ({ children }
     <motion.aside
       initial={{ top: '-100%' }}
       animate={{ top: 0 }}
-      transition={{ ease: 'linear', duration: 1 }}
+      transition={{ ease: 'linear', duration: 1, delay: 0.5 }}
       className={styles.aside}
     />
     <motion.footer
       initial={{ left: '100vw' }}
       animate={{ left: 0 }}
-      transition={{ ease: 'linear' }}
+      transition={{ ease: 'linear', delay: 0.5 }}
       className={styles.footer}
     />
   </AnimatePresence>

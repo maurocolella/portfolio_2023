@@ -1,8 +1,8 @@
-import { LoadablePage } from '@/components/LoadablePage'
-import { Logo } from '../lib/components/Logo'
+import { LoadablePage } from '@/containers/LoadablePage'
+import { prepareAnimatableContent } from '@/utils/prepareAnimatableContent'
 
 export default function Home() {
-  return <LoadablePage rawContent={`
+  return <LoadablePage wrappedContent={prepareAnimatableContent(`
     <div>
       <h1>About Me</h1>
       <h2>About Me</h2>
@@ -12,9 +12,6 @@ export default function Home() {
       <h6>About Me</h6>
       <hr />
       <article>
-        <h1>
-          <Logo />
-        </h1>
         <h1>Mauro Colella</h1>
         <h2>About Me</h2>
         <p>Hi, my name is Mauro Colella. I am a senior software developer with over twenty years of activity in the IT industry. I develop tailored solutions for great companies that offer great services and products.</p>
@@ -29,5 +26,5 @@ export default function Home() {
         <p>I make it simple. For you.</p>
       </article>
     </div>
-  `} />
+  `)} />
 }
