@@ -22,12 +22,13 @@ h2 {
 
 a {
   color: #333;
+  transition: 0.3s color ease;
 
   &:hover {
-    color:#006E89;
+    color:#0099cc;
   }
 
   &:active {
-    color: #1D7Ea9;
+    color: #00aadd;
   }
 }
