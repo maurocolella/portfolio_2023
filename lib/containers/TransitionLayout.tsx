@@ -8,10 +8,15 @@ import Link from 'next/link'
 export const TransitionLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return <AnimatePresence mode="wait">
     <motion.header
-      initial={{ left: '-100vw' }}
-      animate={{ left: 0 }}
+      initial={{ x: '-100vw' }}
+      animate={{ x: 0 }}
       transition={{ ease: 'linear', delay: 0.5 }}
-      className={styles.header}
+      className={styles.header}></motion.header>
+    <motion.div
+      initial={{ x: '-100vw' }}
+      animate={{ x: 0 }}
+      transition={{ ease: 'linear', delay: 0.5 }}
+      className={styles.nav_wrapper}
     >
       <nav className={styles.nav}>
         <motion.ul
@@ -28,7 +33,7 @@ export const TransitionLayout: React.FC<React.PropsWithChildren> = ({ children }
           </li>
         </motion.ul>
       </nav>
-    </motion.header>
+    </motion.div>
     <main className={styles.main}>
       {children}
     </main>

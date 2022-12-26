@@ -12,7 +12,7 @@ const parserOptions: HTMLReactParserOptions = {
         animate={{ opacity: 1 }}
         transition={{
           delay: Math.random() * 0.5,
-          duration: 0.5,
+          duration: Math.random(),
           easing: 'circIn',
         }}
       >

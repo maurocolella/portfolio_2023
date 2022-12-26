@@ -9,20 +9,25 @@
 
 .header {
   background-color: #111;
-  height: 38.2vh;
+  position: absolute;
+  top: 0;
+  height: calc(38.2vh - 3.25rem);
+  width: 100%;
+  z-index: 1;
+}
+
+.nav_wrapper {
+  top: calc(38.2vh - 3.25rem);
   position: absolute;
   width: 100%;
+  z-index: 3;
 }
 
 .nav {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
-  bottom: 0;
   height: 3.25rem;
-  position: absolute;
-  right: 0;
   width: 100%;
-  z-index: 3;
 
   &__menu {
     align-items: center;
