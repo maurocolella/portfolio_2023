@@ -15,3 +15,15 @@ main,
 section {
   box-sizing: border-box;
 }
+
+a {
+  color: #111;
+
+  &:hover {
+    color: #666;
+  }
+
+  &:active {
+    color: #777;
+  }
+}

@@ -25,5 +25,5 @@ const parserOptions: HTMLReactParserOptions = {
 export const LoadablePage: React.FC<{
   wrappedContent: string,
 }> = ({ wrappedContent }) => {
-  return <div>{asReact(wrappedContent, parserOptions)}</div>
+  return <>{asReact(wrappedContent, parserOptions)}</>
 }
