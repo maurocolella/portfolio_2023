@@ -29,10 +29,13 @@
     display: flex;
     flex-direction: row;
     height: 100%;
-    justify-content: flex-end;
     list-style-type: none;
     margin: auto;
     padding: 0;
+
+    @include md {
+      justify-content: flex-end;
+    }
   }
 
   &__cell {
