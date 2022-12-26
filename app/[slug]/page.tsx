@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       <article>
         <h2>About Me</h2>
-        <p>Hi, my name is Mauro Colella. I am a senior software developer with over twenty years of activity in the IT industry. I develop tailored solutions for great companies that offer great services and products.</p>
+        <p>Hi, my name is Mauro Colella. I am a senior software developer with over twenty years of activity in the IT industry. I develop tailored solutions for great companies that offer great products and services.</p>
         <p>I specialize in web applications and full-stack development. From architecture through DevOps and data engineering, all the way to user and application interfaces, integrations, and complex visualizations. I am fluent with a broad range of technologies:
           T-shaped with a passion. And I am certified for this with multiple providers and vendors including Google, Oracle and more.</p>
         <p>I have been successfully freelancing my services for over ten years, with a strong focus on customer needs in both B2B and the general market.</p>

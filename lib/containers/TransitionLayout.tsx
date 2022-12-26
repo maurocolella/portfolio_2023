@@ -1,19 +1,27 @@
 'use client'
 
 import React from 'react'
-import styles from '../../styles/PageLayout.module.scss'
 import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
 import { v4 as uuidv4 } from 'uuid'
+
+import styles from '../../styles/PageLayout.module.scss'
+import { Logo } from '@/components/Logo'
 
 export const TransitionLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return <AnimatePresence mode="wait">
     <motion.header
       initial={{ x: '-100vw' }}
       animate={{ x: 0 }}
-      transition={{ ease: 'linear', delay: 0.5 }}
+      transition={{ ease: 'linear', delay: 0.5, duration: 1 }}
       className={styles.header}
-      key={uuidv4()}></motion.header>
+      key={uuidv4()}>
+    </motion.header>
+    <div
+      style={{ display: 'flex', position: 'absolute', zIndex: 4 }}
+    >
+      <Logo className={styles.logo} />
+    </div>
     <motion.div
       initial={{ x: '-100vw' }}
       animate={{ x: 0 }}
