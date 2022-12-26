@@ -16,14 +16,18 @@ section {
   box-sizing: border-box;
 }
 
+h2 {
+  color: #222;
+}
+
 a {
-  color: #111;
+  color: #333;
 
   &:hover {
-    color: #666;
+    color:#006E89;
   }
 
   &:active {
-    color: #777;
+    color: #1D7Ea9;
   }
 }

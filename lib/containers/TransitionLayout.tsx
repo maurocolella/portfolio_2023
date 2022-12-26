@@ -7,6 +7,7 @@ import { v4 as uuidv4 } from 'uuid'
 
 import styles from '../../styles/PageLayout.module.scss'
 import { Logo } from '@/components/Logo'
+import { Navigation } from '@/components/Navigation'
 
 export const TransitionLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return <AnimatePresence mode="wait">
@@ -28,21 +29,7 @@ export const TransitionLayout: React.FC<React.PropsWithChildren> = ({ children }
       className={styles.nav_wrapper}
       key={uuidv4()}
     >
-      <nav className={styles.nav}>
-        <motion.ul
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ ease: 'linear', duration: 0.5, delay: 1 }}
-          className={styles.nav__menu}
-        >
-          <li className={styles.nav__cell}>
-            <Link className={styles.nav__link} href="/">Home</Link>
-          </li>
-          <li className={styles.nav__cell}>
-            <Link className={styles.nav__link} href="/about">About</Link>
-          </li>
-        </motion.ul>
-      </nav>
+      <Navigation />
     </motion.div>
     <main className={styles.main}>
       {children}

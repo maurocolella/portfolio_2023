@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
 const draw = {
   hidden: { pathLength: 0, stroke: 'rgb(255, 255, 255, 1)' },
@@ -10,9 +10,9 @@ const draw = {
         pathLength: { type: 'spring', duration: 3, bounce: 0, ease: 'easeIn' },
         stroke: { delay: 1.5, duration: 1 },
       }
-    };
+    }
   }
-};
+}
 
 const drawGradient = {
   hidden: { stopOpacity: 0 },
@@ -22,9 +22,9 @@ const drawGradient = {
       transition: {
         stopOpacity: { delay: 1.5, duration: 1 }
       }
-    };
+    }
   }
-};
+}
 
 export const Logo: React.FC<{ className?: string }> = ({ className }) => (
   <motion.svg
@@ -60,5 +60,3 @@ export const Logo: React.FC<{ className?: string }> = ({ className }) => (
     </g>
   </motion.svg>
 )
-
-//  fill="url(#grad)">
