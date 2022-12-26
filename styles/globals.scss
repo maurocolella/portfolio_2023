@@ -3,9 +3,9 @@ $baseFontSize: 16;
 @import 'typebase';
 
 html {
-  @include fluid-type(font-size, 800px, 1200px, 16px, 22px);
+  @include fluid-type(font-size, 800px, 1200px, 18px, 22px);
+  color: #111;
 }
-
 
 article,
 div,
