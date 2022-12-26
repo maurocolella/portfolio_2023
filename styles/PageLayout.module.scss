@@ -9,12 +9,26 @@
 
 .header {
   align-items: flex-end;
-  background-color: #111;
   display: flex;
   height: calc(38.2vh - 3.25rem);
-  position: absolute;
+  overflow: hidden;
+  position: relative;
   top: 0;
   width: 100%;
+  z-index: 2;
+}
+
+.header__banner {
+  background-color: #111;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo_wrapper {
+  display: flex;
+  position: absolute;
   z-index: 2;
 }
 
@@ -25,7 +39,6 @@
 }
 
 .nav_wrapper {
-  top: calc(38.2vh - 3.25rem);
   position: absolute;
   width: 100%;
   z-index: 3;
@@ -71,7 +84,7 @@
   overflow: hidden;
   padding: 1rem;
   padding-bottom: calc(38.2vh + 2rem);
-  padding-top: calc(38.2vh + 2rem);
+  padding-top: calc(3.25rem + 2rem);
 
   @include lg {
     width: 61.80%;

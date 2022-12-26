@@ -10,18 +10,17 @@ import { Logo } from '@/components/Logo'
 
 export const TransitionLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return <AnimatePresence mode="wait">
-    <motion.header
-      initial={{ x: '-100vw' }}
-      animate={{ x: 0 }}
-      transition={{ ease: 'linear', delay: 0.5, duration: 1 }}
-      className={styles.header}
-      key={uuidv4()}>
-    </motion.header>
-    <div
-      style={{ display: 'flex', position: 'absolute', zIndex: 4 }}
-    >
-      <Logo className={styles.logo} />
-    </div>
+    <header className={styles.header}>
+      <motion.div
+        initial={{ x: '-100vw' }}
+        animate={{ x: 0 }}
+        transition={{ ease: 'linear', delay: 0.5, duration: 1 }}
+        className={styles.header__banner}
+      />
+      <div className={styles.logo_wrapper}>
+        <Logo className={styles.logo} />
+      </div>
+    </header>
     <motion.div
       initial={{ x: '-100vw' }}
       animate={{ x: 0 }}
@@ -51,7 +50,7 @@ export const TransitionLayout: React.FC<React.PropsWithChildren> = ({ children }
     <motion.aside
       initial={{ y: '-100%' }}
       animate={{ y: 0 }}
-      transition={{ ease: 'linear', duration: 1, delay: 0.5 }}
+      transition={{ ease: 'linear', duration: 2, delay: 1 }}
       className={styles.aside}
       key={uuidv4()}
     />
