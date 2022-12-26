@@ -4,6 +4,7 @@ import React from 'react'
 import styles from '../../styles/PageLayout.module.scss'
 import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
+import { v4 as uuidv4 } from 'uuid'
 
 export const TransitionLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return <AnimatePresence mode="wait">
@@ -11,12 +12,14 @@ export const TransitionLayout: React.FC<React.PropsWithChildren> = ({ children }
       initial={{ x: '-100vw' }}
       animate={{ x: 0 }}
       transition={{ ease: 'linear', delay: 0.5 }}
-      className={styles.header}></motion.header>
+      className={styles.header}
+      key={uuidv4()}></motion.header>
     <motion.div
       initial={{ x: '-100vw' }}
       animate={{ x: 0 }}
       transition={{ ease: 'linear', delay: 0.5 }}
       className={styles.nav_wrapper}
+      key={uuidv4()}
     >
       <nav className={styles.nav}>
         <motion.ul
@@ -42,12 +45,14 @@ export const TransitionLayout: React.FC<React.PropsWithChildren> = ({ children }
       animate={{ y: 0 }}
       transition={{ ease: 'linear', duration: 1, delay: 0.5 }}
       className={styles.aside}
+      key={uuidv4()}
     />
     <motion.footer
       initial={{ x: '100vw' }}
       animate={{ x: 0 }}
       transition={{ ease: 'linear', delay: 0.5 }}
       className={styles.footer}
+      key={uuidv4()}
     />
   </AnimatePresence>
 }

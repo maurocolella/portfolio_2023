@@ -21,6 +21,7 @@ export default function Home() {
   `
 
   return <LoadablePage
+    rawContent={content}
     wrappedContent={prepareAnimatableContent(content)}
   />
 }
