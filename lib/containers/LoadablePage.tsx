@@ -6,8 +6,8 @@ import asReact, { HTMLReactParserOptions, Element, domToReact } from 'html-react
 import { useState } from 'react'
 
 const variants = {
-  visible: { opacity: 1 },
-  hidden: { opacity: 0 },
+  visible: { color: '#222' },
+  hidden: { color: '#fff' },
 }
 
 const parserOptions: HTMLReactParserOptions = {
