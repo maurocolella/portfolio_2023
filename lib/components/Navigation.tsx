@@ -21,7 +21,7 @@ export const Navigation: React.FC = () => {
         >
           Home
         </Link>
-        {selected === 0 && <div className={styles.nav__underline} />}
+        {selected === 0 && <motion.div layoutId="underline" className={styles.nav__underline} />}
       </motion.li>
       <motion.li className={`${styles.nav__cell} ${selected === 1 && styles['nav__cell-selected']}`} key={1}>
         <Link
@@ -31,7 +31,7 @@ export const Navigation: React.FC = () => {
         >
           About
         </Link>
-        {selected === 1 && <div className={styles.nav__underline} />}
+        {selected === 1 && <motion.div layoutId="underline" className={styles.nav__underline} />}
       </motion.li>
       <motion.li className={`${styles.nav__cell} ${selected === 2 && styles['nav__cell-selected']}`} key={2}>
         <a
@@ -41,7 +41,7 @@ export const Navigation: React.FC = () => {
         >
           Blog
         </a>
-        {selected === 2 && <div className={styles.nav__underline} />}
+        {selected === 2 && <motion.div layoutId="underline" className={styles.nav__underline} />}
       </motion.li>
     </motion.ul>
   </nav>
