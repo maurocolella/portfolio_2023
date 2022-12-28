@@ -1,11 +1,11 @@
 $baseFontSize: 16;
-@import 'fluid-type';
+@import 'normalize.css/normalize';
 @import 'typebase';
+@import 'fluid-type';
 
 html {
   @include fluid-type(font-size, 800px, 1200px, 16px, 22px);
 }
-
 
 article,
 div,
@@ -14,4 +14,21 @@ footer,
 main,
 section {
   box-sizing: border-box;
+}
+
+h2 {
+  color: #222;
+}
+
+a {
+  color: #333;
+  transition: 0.3s color ease;
+
+  &:hover {
+    color:#0099cc;
+  }
+
+  &:active {
+    color: #00aadd;
+  }
 }
