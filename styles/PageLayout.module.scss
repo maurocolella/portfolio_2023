@@ -10,7 +10,9 @@
 .header {
   align-items: flex-end;
   display: flex;
+  flex-direction: column;
   height: calc(38.2vh - 3.25rem);
+  min-height: 200px;
   overflow: hidden;
   position: relative;
   top: 0;
@@ -26,6 +28,7 @@
 }
 
 .logo_wrapper {
+  bottom: 0;
   display: flex;
   position: absolute;
   z-index: 2;
@@ -47,9 +50,8 @@
   margin-right: auto;
   max-width: 1200px;
   overflow: hidden;
-  padding: 1rem;
-  padding-bottom: calc(38.2vh + 2rem);
-  padding-top: calc(3.25rem + 2rem);
+  padding: 2rem;
+  padding-bottom: calc(23.6vh + 2rem);
 
   @include lg {
     width: 61.80%;
@@ -78,7 +80,7 @@
   background-color: #fff;
   border-top: 1px solid #ddd;
   bottom: 0;
-  height: 38.2vh;
+  height: 23.6vh;
   position: absolute;
   z-index: 3;
   width: 100%;

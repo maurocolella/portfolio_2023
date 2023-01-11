@@ -12,25 +12,29 @@ import { Navigation } from '@/components/Navigation'
 export const TransitionLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return <AnimatePresence mode="wait">
     <header className={styles.header}>
-      <motion.div
-        initial={{ x: '-100vw' }}
-        animate={{ x: 0 }}
-        transition={{ ease: 'linear', delay: 0.5, duration: 1 }}
-        className={styles.header__banner}
-      />
-      <div className={styles.logo_wrapper}>
-        <Logo className={styles.logo} />
+      <div style={{ position: 'relative', flex: 1, width: '100%', minHeight: 'calc(100% - 3.25rem - 1px)' }}>
+        <motion.div
+          initial={{ x: '-100vw' }}
+          animate={{ x: 0 }}
+          transition={{ ease: 'linear', delay: 0.5, duration: 1 }}
+          className={styles.header__banner}
+        />
+        <div className={styles.logo_wrapper}>
+          <Logo className={styles.logo} />
+        </div>
+      </div>
+      <div style={{ position: 'relative', width: '100%', flex: 1 }}>
+        <motion.div
+          initial={{ x: '-100vw' }}
+          animate={{ x: 0 }}
+          transition={{ ease: 'linear', delay: 0.5 }}
+          className={styles.nav_wrapper}
+          key={uuidv4()}
+        >
+          <Navigation />
+        </motion.div>
       </div>
     </header>
-    <motion.div
-      initial={{ x: '-100vw' }}
-      animate={{ x: 0 }}
-      transition={{ ease: 'linear', delay: 0.5 }}
-      className={styles.nav_wrapper}
-      key={uuidv4()}
-    >
-      <Navigation />
-    </motion.div>
     <main className={styles.main}>
       {children}
     </main>
